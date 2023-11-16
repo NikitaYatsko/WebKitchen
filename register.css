@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Monsterrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: aqua;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+body {
+    font-family: Monsterrat;
+    color: white;
+    background-image: url(img/pexels-sebastian-ervi-1763068.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg_section {
+    backdrop-filter: blur(5px);
+    padding: 20px 20px;
+    text-align: center;
+    width: 450px;
+    height: 600px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.inputs input {
+    color: white;
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 50px;
+    padding: 20px 20px;
+}
+
+.checkbox {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.mail_sms {
+    margin-top: 10px;
+}
+
+.btn {
+
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 255, 255, 0.494);
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn:hover {
+    background: rgba(0, 255, 255, 0.819);
+
+}
+
+.with_account {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.middle_img {
+    margin: 0 10px 0 10px;
+}
+
+.images {
+    margin-top: 10px;
+}
