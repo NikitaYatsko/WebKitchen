@@ -7,6 +7,7 @@ body {
     background-color: black;
     color: white;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,11 +15,12 @@ body {
     font-family: Monsterrat;
 }
 
- h1 {
+h1 {
     text-align: center;
     color: aqua;
     font-size: 30px;
- }
+}
+
 h2 {
     color: aqua;
 }
@@ -89,9 +91,8 @@ header {
 }
 
 .video_wrapper {
-  margin-top: 40px; 
+    margin-top: 40px;
     display: flex;
     justify-content: space-around;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-
