@@ -3,23 +3,33 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
+html {
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Monsterrat;
-
-
 }
+
 ul {
     margin-right: 25px;
 }
 
 h2 {
     color: aqua;
-
-
 }
 
 
@@ -28,36 +38,32 @@ a {
     font-weight: 500;
     text-decoration: none;
     color: aliceblue;
-
 }
 
 
 header {
-
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    width: 100%;
+    max-width: 100%;
     height: 120px;
-
-
 }
 
 .logo_div {
     text-align: center;
     cursor: pointer;
     padding: 10px 10px;
-
 }
+
 nav {
     margin-right: 100px;
 }
+
 .links {
     display: flex;
     gap: 60px;
-    
 }
 
 .links li {
@@ -94,8 +100,9 @@ nav {
 }
 
 .main_section {
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
+
 }
 
 
@@ -107,20 +114,26 @@ video {
     height: inherit;
     z-index: -1;
     object-fit: cover;
-    filter: brightness(30%);
+    filter: brightness(20%);
 }
 
 .promo {
-    width: 856px;
-    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 20px;
+
 }
 
 .promo_text {
-    font-size: 30px;
+    max-width: 700px;
+    font-size: 35px;
     color: white;
     text-align: center;
-    margin: 25px 0 20px 0;
+    margin-top: 16px;
+
 }
 
 .promo_text span {
@@ -129,29 +142,30 @@ video {
 
 .promo_h1 {
     color: aqua;
-    font-size: 75px;
+    font-size: 65px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
-    font-family: Code   ;
+    font-family: Code;
 }
 
 .button_wrapper {
 
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 
 .btn1,
 .btn2 {
 
     max-width: 200px;
+    max-height: 100px;
     background: transparent;
     border: 2px solid;
     border-color: aliceblue;
     border-radius: 25px;
     padding: 10px 10px;
-    margin: 50px 25px 0 25px;
+    margin-top: 40px;
     transition: 0.5s;
 
 }
@@ -199,7 +213,7 @@ video {
     background-position: center;
     background-size: cover;
     height: 650px;
-   
+
 }
 
 .slider_btn_wrapper {
@@ -371,109 +385,201 @@ video {
 }
 
 @media screen and (max-width: 1250px) {
-   
+    .promo_text {
+        font-style: 2px;
+    }
+
     nav {
         margin-right: 30px;
     }
-   .shows_text {
-    font-size: 15px;
-   }
- 
-    .promo_h1 {
-        font-size: 35px;
+
+    .shows_text {
+        font-size: 15px;
     }
+
+    .promo_h1 {
+        font-size: 50px;
+    }
+
     .shows_img {
         width: 200px;
         height: 200px;
-       
+
     }
 }
-@media screen and (max-width:1035px){
+
+@media screen and (max-width:1035px) {
+
     ul a {
         font-size: 20px;
     }
+
     nav {
         margin-right: 0;
     }
 }
-@media screen and (max-width:942px){
-   nav {
-    display: none;
-   }
-   video {
-    display: none;
-}
-.main_section {
-    background-image: url(img/wallpaperflare.com_wallpaper.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.promo_text {
-    font-size: 25px;
-}
+
+@media screen and (max-width:942px) {
+
+ .promo_text {
+    font-size: 35px;
+ }
+
+
+    nav {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    .main_section {
+        background-image: url(img/mbg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(10px);
+        min-height: 100vh;
+    }
+
+
 
 }
+
 @media screen and (max-width:820px) {
-   
+
+
+
     .shows_img {
         width: 150px;
         height: 150px;
-       
+
     }
-    nav{
+
+    nav {
         display: none;
     }
 
     .slider {
         border: none;
     }
-    .slider-line img {
-        height: 400px;
-    }
-   
-}  
-@media screen and (max-width:720px) {
-    .ticket_block {
-        width: 500px;
-    }
-   
-    .shows_h2 {
-        font-size: 20px;
-    }
+
     .slider-line img {
         height: 350px;
     }
-   
+
 }
+
+@media screen and (max-width:720px) {
+    a {
+        font-size: 20px;
+    }
+
+    .ticket_block {
+        width: 500px;
+    }
+
+    .shows_h2 {
+        font-size: 20px;
+    }
+
+    .slider-line img {
+        height: 350px;
+    }
+
+}
+
 @media screen and (max-width:680px) {
+    a {
+        font-size: 18px;
+    }
+
+    .promo_h1 {
+        font-style: 35px;
+    }
+
     .shows_img {
         width: 150px;
         height: 100px;
-    
+
     }
+
     .shows_wrapper_1 {
         flex-direction: column;
     }
- 
-    
-}  
+
+
+}
+
+@media screen and (max-width:540px) {
+    .promo_text {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width:515px) {
+    a {
+        font-size: 16px;
+    }
+
     .ticket_block {
         width: 400px;
     }
+
     .events_text {
-        font-size: 16px ;
+        font-size: 16px;
     }
+
     .slider-line img {
         height: 250px;
     }
+
+    .promo_h1 {
+        font-size: 35px;
+    }
+
+
 }
+
 @media screen and (max-width:400px) {
+    .promo_text {
+        font-size: 21px;
+    }
+
+
     .ticket_block {
         width: 300px;
         font-size: 12px;
     }
-   
+
+
 }
 
+
+@media screen and (max-width:280px) {
+    .ticket_btn {
+        font-size: 10px;
+    } 
+    .ticket_block {
+        width: 275px;
+    }
+    .promo_h1 {
+        font-size: 30px;
+
+    }
+
+    .promo_text {
+        font-size: 15px;
+    }
+
+
+   a {
+    font-size: 12px;
+   }
+}
+@media screen and (max-height:600px) {
+    .promo_text {
+        font-size: 25px;
+    }
+}
