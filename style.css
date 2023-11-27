@@ -9,6 +9,10 @@ html {
     max-width: 100%;
     overflow-x: hidden;
 }
+.logo {
+    height: 48px;
+    width: 48px;
+}
 
 body {
     width: 100%;
@@ -26,6 +30,10 @@ body {
 
 ul {
     margin-right: 25px;
+    
+}
+ul li {
+    font-size: 25px;
 }
 
 h2 {
@@ -34,7 +42,6 @@ h2 {
 
 
 a {
-    font-size: 25px;
     font-weight: 500;
     text-decoration: none;
     color: aliceblue;
@@ -48,7 +55,7 @@ header {
     align-items: center;
     padding: 15px 10%;
     max-width: 100%;
-    height: 120px;
+    height: 100px;
 }
 
 .logo_div {
@@ -100,7 +107,7 @@ nav {
 }
 
 .main_section {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
 
 }
@@ -118,34 +125,26 @@ video {
 }
 
 .promo {
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px;
-
+ height: 70vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
 
-.promo_text {
-    max-width: 700px;
-    font-size: 35px;
-    color: white;
+.own_show {
     text-align: center;
-    margin-top: 16px;
-
-}
-
-.promo_text span {
-    color: aqua;
 }
 
 .promo_h1 {
     color: aqua;
-    font-size: 65px;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     font-family: Code;
+}
+.own_show {
+    color: white;
+    font-size: 40px;
 }
 
 .button_wrapper {
@@ -157,15 +156,13 @@ video {
 
 .btn1,
 .btn2 {
-
-    max-width: 200px;
-    max-height: 100px;
+   max-width: 150px;
+    max-height: 50px;
     background: transparent;
     border: 2px solid;
     border-color: aliceblue;
-    border-radius: 25px;
     padding: 10px 10px;
-    margin-top: 40px;
+    margin-top: 10px;
     transition: 0.5s;
 
 }
@@ -472,9 +469,6 @@ video {
 }
 
 @media screen and (max-width:720px) {
-    a {
-        font-size: 20px;
-    }
 
     .ticket_block {
         width: 500px;
@@ -491,14 +485,13 @@ video {
 }
 
 @media screen and (max-width:680px) {
-    a {
-        font-size: 18px;
-    }
+    .promo {
+        margin-top: 10px;
+      }
 
     .promo_h1 {
-        font-style: 35px;
-    }
-
+font-size: 30px;
+      }
     .shows_img {
         width: 150px;
         height: 100px;
@@ -512,16 +505,8 @@ video {
 
 }
 
-@media screen and (max-width:540px) {
-    .promo_text {
-        font-size: 25px;
-    }
-}
-
 @media screen and (max-width:515px) {
-    a {
-        font-size: 16px;
-    }
+
 
     .ticket_block {
         width: 400px;
@@ -543,10 +528,6 @@ video {
 }
 
 @media screen and (max-width:400px) {
-    .promo_text {
-        font-size: 21px;
-    }
-
 
     .ticket_block {
         width: 300px;
@@ -558,9 +539,15 @@ video {
 
 
 @media screen and (max-width:280px) {
+    .own_show {
+        font-size: 30px;
+    }
     .ticket_btn {
         font-size: 10px;
     } 
+  .button_wrapper {
+      gap: 10px;
+  }
     .ticket_block {
         width: 275px;
     }
