@@ -102,3 +102,10 @@ body {
 .images {
     margin-top: 10px;
 }
+
+@media screen and (max-height:625px) {
+    body {
+        min-height: 625px;
+    }
+
+}

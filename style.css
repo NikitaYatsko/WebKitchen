@@ -3,15 +3,28 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Monsterrat;
+}
+
 html {
 
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
+
 .logo {
     height: 48px;
     width: 48px;
+}
+
+.burger_btn {
+    display: none;
 }
 
 body {
@@ -21,17 +34,11 @@ body {
 }
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Monsterrat;
-}
-
 ul {
     margin-right: 25px;
-    
+
 }
+
 ul li {
     font-size: 25px;
 }
@@ -51,9 +58,8 @@ a {
 header {
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px 10%;
     max-width: 100%;
     height: 100px;
 }
@@ -65,7 +71,7 @@ header {
 }
 
 nav {
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .links {
@@ -95,11 +101,6 @@ nav {
 
 }
 
-.login:hover {
-    padding: 15px 15px;
-
-}
-
 .line {
     width: 100%;
     height: 2px;
@@ -125,10 +126,10 @@ video {
 }
 
 .promo {
- height: 70vh;
- display: flex;
- flex-direction: column;
- justify-content: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .own_show {
@@ -142,6 +143,7 @@ video {
     text-transform: uppercase;
     font-family: Code;
 }
+
 .own_show {
     color: white;
     font-size: 40px;
@@ -156,7 +158,7 @@ video {
 
 .btn1,
 .btn2 {
-   max-width: 150px;
+    max-width: 150px;
     max-height: 50px;
     background: transparent;
     border: 2px solid;
@@ -176,10 +178,10 @@ video {
     border-color: aqua;
 }
 
-.down_img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 100px;
+.btn1,
+.btn2 a {
+    font-size: 14px;
+
 }
 
 .slider_section {
@@ -210,6 +212,7 @@ video {
     background-position: center;
     background-size: cover;
     height: 650px;
+
 
 }
 
@@ -382,18 +385,6 @@ video {
 }
 
 @media screen and (max-width: 1250px) {
-    .promo_text {
-        font-style: 2px;
-    }
-
-    nav {
-        margin-right: 30px;
-    }
-
-    .shows_text {
-        font-size: 15px;
-    }
-
     .promo_h1 {
         font-size: 50px;
     }
@@ -405,29 +396,17 @@ video {
     }
 }
 
-@media screen and (max-width:1035px) {
+@media screen and (max-width:865px) {
 
-    ul a {
-        font-size: 20px;
+    .promo_text {
+        font-size: 35px;
     }
 
-    nav {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width:942px) {
-
- .promo_text {
-    font-size: 35px;
- }
-
-
-    nav {
-        display: none;
+    .burger_btn {
+        display: block;
     }
 
-    video {
+    .login_img,nav,video {
         display: none;
     }
 
@@ -454,9 +433,6 @@ video {
 
     }
 
-    nav {
-        display: none;
-    }
 
     .slider {
         border: none;
@@ -487,11 +463,12 @@ video {
 @media screen and (max-width:680px) {
     .promo {
         margin-top: 10px;
-      }
+    }
 
     .promo_h1 {
-font-size: 30px;
-      }
+        font-size: 30px;
+    }
+
     .shows_img {
         width: 150px;
         height: 100px;
@@ -542,15 +519,19 @@ font-size: 30px;
     .own_show {
         font-size: 30px;
     }
+
     .ticket_btn {
         font-size: 10px;
-    } 
-  .button_wrapper {
-      gap: 10px;
-  }
+    }
+
+    .button_wrapper {
+        gap: 10px;
+    }
+
     .ticket_block {
         width: 275px;
     }
+
     .promo_h1 {
         font-size: 30px;
 
@@ -561,10 +542,11 @@ font-size: 30px;
     }
 
 
-   a {
-    font-size: 12px;
-   }
+    a {
+        font-size: 12px;
+    }
 }
+
 @media screen and (max-height:600px) {
     .promo_text {
         font-size: 25px;
