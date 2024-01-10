@@ -17,7 +17,11 @@
 a {
   text-decoration: none;
 }
-
+.main_link {
+  font-weight: 700;
+  color: aqua;
+  font-size: 24px;
+}
 li {
   list-style: none;
   cursor: pointer;
@@ -193,6 +197,7 @@ header .login_img {
 
 .footer {
   background-color: black;
+  padding: 0 20px 0 20px;
 }
 
 .footer .footer_wrapper {
@@ -276,7 +281,9 @@ header .login_img {
 .footer .footer_wrapper .bottom_nav ul li:hover {
   color: aqua;
 }
-
+.modal ul a {
+  font-size: 25px;
+}
 @media screen and (max-width: 767px) {
   .date_wrapper {
     -webkit-box-orient: vertical;
@@ -363,6 +370,10 @@ header .login_img {
 
   .date_item {
     max-width: 280px !important;
+  }
+
+  .footer .footer_wrapper .req h2 {
+    font-size: 15px;
   }
 }
 

@@ -19,6 +19,12 @@ html {
     overflow-x: hidden;
 }
 
+.main_link {
+    font-weight: 700;
+    color: aqua;
+    font-size: 24px;
+}
+
 body {
     background: url(../img/dates.bg.jpg);
     background-position: center;
@@ -189,6 +195,7 @@ nav {
 
 .footer {
     background-color: black;
+    padding: 0 20px 0 20px;
 }
 
 .footer .footer_wrapper {
@@ -284,6 +291,7 @@ nav {
 @media screen and (max-width:1000px) {
     .grid_wrapper {
         max-width: 620px;
+        margin: 0 auto;
         grid-template-columns: 300px 300px;
         grid-template-areas:
             "img1 img1"
@@ -383,6 +391,10 @@ nav {
 
     .date_item {
         max-width: 280px !important;
+    }
+
+    .footer .footer_wrapper .req h2 {
+        font-size: 15px;
     }
 }
 

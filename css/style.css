@@ -311,6 +311,7 @@ video {
 }
 
 .ticket_block {
+
   width: 718px;
   min-height: 104px;
   background-color: black;
@@ -419,6 +420,7 @@ video {
 
 .footer {
   background-color: black;
+  padding: 0 20px 0 20px;
 }
 
 .footer .footer_wrapper {
@@ -569,7 +571,7 @@ video {
   }
 
   .main_section {
-    background-image: url(../img/desktop-wallpaper-3-gray-slate-grey-android.jpg);
+    background-image: url(../img/mbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -745,6 +747,10 @@ video {
 
   .ticket_btn {
     font-size: 10px;
+  }
+
+  .footer .footer_wrapper .req h2 {
+    font-size: 15px;
   }
 
 }
