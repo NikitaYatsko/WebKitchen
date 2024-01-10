@@ -1,0 +1,407 @@
+@font-face {
+    font-family: Monsterrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Monsterrat;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/dates.bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.links {
+    display: flex;
+    gap: 60px;
+}
+
+.logo_div {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+li,
+a {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+header {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid white;
+}
+
+.logo_div {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li :hover {
+    color: aqua;
+    border-bottom: 2px solid white;
+}
+
+
+.burger_logo {
+    display: none;
+}
+
+
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: 0 auto;
+    grid-template-areas:
+        "img1 img1 img2"
+        "img3 img4 img4"
+        "img5 img6 img7"
+    ;
+    gap: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.grid_items {
+    cursor: pointer;
+    font-size: 25px;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+
+
+}
+
+.grid_items:hover {
+    transform: translateY(2px);
+}
+
+
+.item1 {
+    grid-area: img1;
+    background: url(../img/AA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    grid-area: img2;
+    background: url(../img/AsILayDying-Awakened.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    grid-area: img3;
+    background: url(../img/slipknot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    grid-area: img4;
+    background: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    grid-area: img5;
+    background: url(../img/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    grid-area: img6;
+
+    background: url(../img/neverlove.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7 {
+    grid-area: img7;
+    background: url(../img/m1000x1000.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.login_logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer .footer_wrapper {
+    min-height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer .footer_wrapper .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .footer_wrapper .social_media ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+
+    color: white;
+}
+
+.footer .footer_wrapper .social_media ul li:hover {
+    color: aqua;
+}
+
+.footer .footer_wrapper .social_media ul li {
+    font-size: 20px;
+}
+
+.footer .footer_wrapper .social_media h2 {
+    font-size: 30px;
+}
+
+.footer .footer_wrapper .req {
+    text-align: center;
+    width: 50%;
+}
+
+.footer .footer_wrapper .req h2 {
+    color: aqua;
+}
+
+.footer .footer_wrapper .req button {
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    color: aqua;
+    border: none;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid aqua;
+}
+
+.footer .footer_wrapper .bottom_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.footer .footer_wrapper .bottom_nav ul li {
+    font-size: 20px;
+}
+
+.footer .footer_wrapper .bottom_nav ul li:hover {
+    color: aqua;
+}
+
+
+@media screen and (max-width:1000px) {
+    .grid_wrapper {
+        max-width: 620px;
+        grid-template-columns: 300px 300px;
+        grid-template-areas:
+            "img1 img1"
+            "img2 img3"
+            "img4 img4"
+            "img5 img6"
+            "img7 img8";
+
+    }
+}
+
+
+@media screen and (max-width:767px) {
+
+    .footer {
+        padding: 20px 0 20px 0;
+    }
+
+    .footer .footer_wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer .footer_wrapper .social_media ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer .footer_wrapper .social_media ul li {
+        font-size: 20px;
+    }
+
+    .footer .footer_wrapper .bottom_nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .login_logo {
+        display: none;
+    }
+
+    .burger_logo {
+
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .grid_wrapper {
+        max-width: 300px;
+        grid-template-columns: 300px;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8";
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social_media ul li {
+        font-size: 16px !important;
+    }
+
+    .date_item {
+        max-width: 280px !important;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .grid_items {
+        max-width: 245px;
+        max-height: 245px;
+    }
+
+    .grid_wrapper {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .social_media ul {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+}
