@@ -107,7 +107,7 @@ nav {
 .grid_wrapper {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    margin: 0 auto;
+    justify-content:center;
     grid-template-areas:
         "img1 img1 img2"
         "img3 img4 img4"
