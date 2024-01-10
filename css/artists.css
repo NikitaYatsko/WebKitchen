@@ -405,7 +405,9 @@ nav {
     }
 
     .grid_wrapper {
-        max-width: 250px;
+    max-width: 250px;
+    margin: 0 auto;
+    justify-content: flex-start;
     }
 }
 
